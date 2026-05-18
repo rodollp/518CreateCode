@@ -29,9 +29,11 @@ public class Monster : Creature
 {
     [SerializeField] protected Reward reward;
     [SerializeField] protected Point point;
-
+    [SerializeField] private int monsterExp;
     public Reward Reward => reward;
     public Point Point => point;
+
+    public int MonsterExp => monsterExp;
 
     protected override void Awake()
     {

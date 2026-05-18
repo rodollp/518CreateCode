@@ -18,7 +18,7 @@ public class Player : Creature
 
     private void LevelUp()
     {
-        if (exp > 0)
+        if (exp >= 100)
         {
             exp -= 100;
             level++;
