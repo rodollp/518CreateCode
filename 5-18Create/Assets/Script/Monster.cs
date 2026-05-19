@@ -38,7 +38,7 @@ public class Monster : Creature
     protected override void Awake()
     {
         base.Awake();
-
+        
     }
     protected override void Die()
     {
