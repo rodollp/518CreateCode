@@ -27,7 +27,7 @@ public class MapTest : MonoBehaviour
 
         PrintMonster();
 
-        SearchMonster(" orc    ");
+        SearchMonster("  orc    ");
     }
 
     private void SearchMonster(string input)

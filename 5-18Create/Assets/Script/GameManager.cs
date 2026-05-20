@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
     private Storage<Monster> monsterStorage = new Storage<Monster>();
     private Dictionary<string, Monster> findMons = new Dictionary<string, Monster>();
     private Queue<Monster> spawnQueue = new Queue<Monster>();
-    private Stack<string> logs = new Stack<string>();
+    private Queue<string> logs = new Queue<string>();
 
     
     
@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
 
         while (logs.Count > 0)
         {
-            Debug.Log (logs.Pop());
+            Debug.Log (logs.Dequeue());
         }
     }
     private Monster FindMonster(string monsterName)
@@ -77,23 +77,23 @@ public class GameManager : MonoBehaviour
             
             
             
-            logs.Push($"{currentMonster.name} 등장!");
+            logs.Enqueue($"{currentMonster.name} 등장!");
             
             
             while (!currentMonster.IsDead && !Player.IsDead)
             {
                 Player.Attack(currentMonster);
-                logs.Push($"{Player.name} =>{currentMonster.name}공격");
+                logs.Enqueue($"{Player.name} =>{currentMonster.name}공격");
 
                 if (currentMonster.IsDead)
                 {
                     Player.GainExp(currentMonster.MonsterExp);
-                    logs.Push($"{currentMonster.name} 처치");
+                    logs.Enqueue($"{currentMonster.name} 처치");
                     break;
                 }
 
                 currentMonster.Attack(Player);
-                logs.Push($"{currentMonster.name}=>{Player.name} 공격");
+                logs.Enqueue($"{currentMonster.name}=>{Player.name} 공격");
 
             }
 
@@ -136,7 +136,7 @@ public class GameManager : MonoBehaviour
             spawnQueue.Enqueue(m);
 
             // 생성 로그 저장
-            logs.Push($"{m.name} 소환됨");
+            logs.Enqueue($"{m.name} 소환됨");
         }
 
      
