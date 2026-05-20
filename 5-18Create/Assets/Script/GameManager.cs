@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
     private Dictionary<string, Monster> findMons = new Dictionary<string, Monster>();
     private Queue<Monster> spawnQueue = new Queue<Monster>();
     private Stack<string> logs = new Stack<string>();
-    
 
+    
     
 
     void PrintLogs()
@@ -59,13 +59,12 @@ public class GameManager : MonoBehaviour
     private Monster FindMonster(string monsterName)
     {
         // 딕셔너리에 이름이 존재하는지 확인
-        if (findMons.ContainsKey(monsterName))
+       if(findMons.TryGetValue(monsterName, out Monster monster))
         {
-            Debug.Log($"{findMons[monsterName]} 발견!");
-            return findMons[monsterName];
-        }
+          return monster;  
 
-        return null;
+        }
+       return null;
     }
     void StartCombat()
     {
@@ -75,6 +74,8 @@ public class GameManager : MonoBehaviour
         while (!Player.IsDead && spawnQueue.Count > 0 )
         {
             Monster currentMonster = spawnQueue.Dequeue();
+            
+            
             
             logs.Push($"{currentMonster.name} 등장!");
             
@@ -117,6 +118,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Spawner spawner = new Spawner();
+        
 
         // 몬스터 초기 등록
         foreach (Monster m in Monsters)
