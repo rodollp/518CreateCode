@@ -163,9 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4e3f29768a412946880feb6362e448e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uC2AC\uB77C\uC784"
+  _name: "\uC2AC\uB77C\uC7841"
   _Atk: 5
-  _MaxHp: 20
+  _MaxHp: 28
   reward:
     itemName: "\uC2AC\uB77C\uC784 \uC870\uAC01"
     gold: 50
@@ -312,6 +312,62 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &381753064
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381753066}
+  - component: {fileID: 381753065}
+  m_Layer: 0
+  m_Name: Slime (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &381753065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381753064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e3f29768a412946880feb6362e448e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\uC2AC\uB77C\uC7843"
+  _Atk: 5
+  _MaxHp: 69
+  reward:
+    itemName: "\uC2AC\uB77C\uC784 \uC870\uAC01"
+    gold: 50
+  point:
+    x: 3
+    y: 3
+  monsterExp: 100
+  monsterState: 0
+  monsterRank: 1
+--- !u!4 &381753066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381753064}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +489,62 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &441502145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441502147}
+  - component: {fileID: 441502146}
+  m_Layer: 0
+  m_Name: Slime (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &441502146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441502145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e3f29768a412946880feb6362e448e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\uC2AC\uB77C\uC7844"
+  _Atk: 5
+  _MaxHp: 6
+  reward:
+    itemName: "\uC2AC\uB77C\uC784 \uC870\uAC01"
+    gold: 50
+  point:
+    x: 3
+    y: 3
+  monsterExp: 100
+  monsterState: 0
+  monsterRank: 0
+--- !u!4 &441502147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441502145}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &538048177
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &538048178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +577,16 @@ MonoBehaviour:
   Player: {fileID: 1863017900}
   Monsters:
   - {fileID: 1244317456}
+  - {fileID: 1651373083}
+  - {fileID: 664767883}
+  - {fileID: 964147739}
+  - {fileID: 628453813}
   - {fileID: 190747936}
+  - {fileID: 1369604778}
+  - {fileID: 381753065}
+  - {fileID: 441502146}
+  - {fileID: 1446265588}
+  testNum: 1
 --- !u!4 &538048179
 Transform:
   m_ObjectHideFlags: 0
@@ -476,6 +597,118 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &628453812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628453814}
+  - component: {fileID: 628453813}
+  m_Layer: 0
+  m_Name: Orc (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &628453813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628453812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769c39b5d7baa12409c85abc3f2ab8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\uB300\uC7A5 \uC624\uD06C"
+  _Atk: 10
+  _MaxHp: 122
+  reward:
+    itemName: "\uBABD\uB465\uC774"
+    gold: 100
+  point:
+    x: 1
+    y: 2
+  monsterExp: 200
+  monsterState: 0
+  monsterRank: 2
+--- !u!4 &628453814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628453812}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &664767882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664767884}
+  - component: {fileID: 664767883}
+  m_Layer: 0
+  m_Name: Orc (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &664767883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664767882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769c39b5d7baa12409c85abc3f2ab8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\uC624\uD06C3"
+  _Atk: 10
+  _MaxHp: 49
+  reward:
+    itemName: "\uBABD\uB465\uC774"
+    gold: 100
+  point:
+    x: 1
+    y: 2
+  monsterExp: 200
+  monsterState: 0
+  monsterRank: 0
+--- !u!4 &664767884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664767882}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -530,6 +763,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &964147738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964147740}
+  - component: {fileID: 964147739}
+  m_Layer: 0
+  m_Name: Orc (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &964147739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964147738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769c39b5d7baa12409c85abc3f2ab8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\uC624\uD06C4"
+  _Atk: 10
+  _MaxHp: 57
+  reward:
+    itemName: "\uBABD\uB465\uC774"
+    gold: 100
+  point:
+    x: 1
+    y: 2
+  monsterExp: 200
+  monsterState: 0
+  monsterRank: 0
+--- !u!4 &964147740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964147738}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1244317454
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769c39b5d7baa12409c85abc3f2ab8db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uC624\uD06C"
+  _name: "\uC624\uD06C1"
   _Atk: 10
   _MaxHp: 30
   reward:
@@ -585,7 +874,63 @@ MonoBehaviour:
     y: 2
   monsterExp: 200
   monsterState: 0
-  monsterRank: 2
+  monsterRank: 0
+--- !u!1 &1369604777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1369604779}
+  - component: {fileID: 1369604778}
+  m_Layer: 0
+  m_Name: Slime (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1369604778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369604777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e3f29768a412946880feb6362e448e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\uC2AC\uB77C\uC7842"
+  _Atk: 5
+  _MaxHp: 13
+  reward:
+    itemName: "\uC2AC\uB77C\uC784 \uC870\uAC01"
+    gold: 50
+  point:
+    x: 3
+    y: 3
+  monsterExp: 100
+  monsterState: 0
+  monsterRank: 0
+--- !u!4 &1369604779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369604777}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1440363608
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,6 +962,118 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1446265587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1446265589}
+  - component: {fileID: 1446265588}
+  m_Layer: 0
+  m_Name: Slime (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1446265588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446265587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4e3f29768a412946880feb6362e448e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\uB300\uC7A5 \uC2AC\uB77C\uC784"
+  _Atk: 5
+  _MaxHp: 204
+  reward:
+    itemName: "\uC2AC\uB77C\uC784 \uC870\uAC01"
+    gold: 50
+  point:
+    x: 3
+    y: 3
+  monsterExp: 100
+  monsterState: 0
+  monsterRank: 2
+--- !u!4 &1446265589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446265587}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1651373082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1651373084}
+  - component: {fileID: 1651373083}
+  m_Layer: 0
+  m_Name: Orc (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1651373083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651373082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769c39b5d7baa12409c85abc3f2ab8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _name: "\uC624\uD06C2"
+  _Atk: 10
+  _MaxHp: 42
+  reward:
+    itemName: "\uBABD\uB465\uC774"
+    gold: 100
+  point:
+    x: 1
+    y: 2
+  monsterExp: 200
+  monsterState: 0
+  monsterRank: 0
+--- !u!4 &1651373084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651373082}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1666206132
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +1090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1666206133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -681,7 +1138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1863017900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,9 +1151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d677111cf574a2044b1e17ab583da9a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: "\uC6A9\uC0AC"
-  _Atk: 10
-  _MaxHp: 100
+  _name: "\uC6A9\uC0AC"
+  _Atk: 20
+  _MaxHp: 200
   exp: 0
   level: 1
 --- !u!4 &1863017901
@@ -738,4 +1195,12 @@ SceneRoots:
   - {fileID: 1440363609}
   - {fileID: 1666206134}
   - {fileID: 1244317455}
+  - {fileID: 1651373084}
+  - {fileID: 664767884}
+  - {fileID: 964147740}
+  - {fileID: 628453814}
   - {fileID: 190747935}
+  - {fileID: 1369604779}
+  - {fileID: 381753066}
+  - {fileID: 441502147}
+  - {fileID: 1446265589}

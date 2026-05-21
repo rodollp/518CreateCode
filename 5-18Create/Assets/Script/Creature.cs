@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class Creature : MonoBehaviour , IDamageable
 {
-    [SerializeField] private string Name;
+    [SerializeField] private string _name;
     [SerializeField] private int _Atk;
     [SerializeField] private int _MaxHp;
 
     protected int _Hp;
+    public string Name => _name;
 
     protected virtual void Awake()
     {

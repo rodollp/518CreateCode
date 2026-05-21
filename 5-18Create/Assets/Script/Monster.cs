@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 [System.Serializable]
 public struct Reward
@@ -47,6 +48,7 @@ public class Monster : Creature
     [SerializeField] protected MonsterState monsterState;
     [SerializeField] protected MonsterRank monsterRank;
 
+    public event Action<Monster> OnDeadEvent;
     public Reward Reward => reward;
     public MonsterRank MonsterRank => monsterRank;
     public MonsterState CurrentState => monsterState;
@@ -127,7 +129,6 @@ public class Monster : Creature
     protected override void Die()
     {
         base.Die();
-        Debug.Log($"위치 :  ({point.x},{point.y}) 몬스터 보상 : {reward.itemName} , {reward.gold}골드");
-
+        OnDeadEvent?.Invoke(this);
     }
 }

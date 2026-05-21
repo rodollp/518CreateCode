@@ -1,4 +1,6 @@
+using NUnit.Framework;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Player : Creature
 {
@@ -16,14 +18,25 @@ public class Player : Creature
 
     }
 
+    public void ArryAttack(List<Monster> monsters)
+    {
+        Debug.Log("범위 공겨어어억!");
+        monsters.ForEach(monster => monster.TakeDamage(Atk) );
+        
+
+    }
+
     private void LevelUp()
     {
         while (exp >= 100)
         {
             exp -= 100;
             level++;
-
+            Atk += 3;
+            Hp += 10;
+            MaxHp += 10;
             Debug.Log($"레벨업! 현재 레벨 : {level}");
+            Debug.Log(GetStatusText());
         }
     }
 
